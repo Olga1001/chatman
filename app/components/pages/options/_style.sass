@@ -1,0 +1,191 @@
+.options
+  &:before
+    content: none
+  &__row
+    display: flex
+    flex-wrap: wrap
+    padding-top: 30px
+  &__item
+    width: calc(33.33% - 34px)
+    margin-right: 50px
+    display: flex
+    align-items: flex-start
+    padding-top: 30px
+    &:nth-child(3n+3)
+      margin-right: 0
+    .text-18
+      font-family: "Roboto-Bold", sans-serif
+      font-weight: 700
+      margin-bottom: 5px
+  &__col
+    padding-left: 20px
+    width: calc(100% - 63px)
+  &__icon
+    width: 63px
+    img
+      margin: 0 auto
+  &__offer
+    background-color: $bg-color4
+    &-row
+      text-align: center
+      padding: 66px 0 60px
+      max-width: 655px
+      margin: 0 auto
+    .title
+      margin-bottom: 10px
+  &__second
+    padding-bottom: 40px
+    .tabs-item
+      padding: 16px 10px
+      min-width: auto
+      margin: 0 10px
+    &-row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 19px
+    &-item
+      max-width: 450px
+      width: 50%
+      margin-right: 37px
+      .text-14
+        margin-top: 15px
+  &__third
+    padding: 30px 0 95px
+    .text-24
+      text-align: center
+    &-text
+      text-align: center
+      max-width: 684px
+      margin: 10px auto
+  &__fourth
+    position: relative
+    padding: 66px 0
+    text-align: center
+    &:before
+      @include before
+      height: 972px
+      background-image: linear-gradient(to top, $bg-color1, $bg-color3)
+      z-index: -1
+    p
+      max-width: 700px
+      margin: 15px auto
+    &-img
+      margin: -140px auto 0
+  &__fifth
+    padding-bottom: 84px
+    &-top
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+    &-left
+      max-width: 490px
+      p
+        line-height: 1.5
+    .title
+      text-align: left
+      margin-bottom: 10px
+
+  &__analysis
+    position: relative
+    padding-top: 80px
+    margin-top: -145px
+    width: 100%
+    &-item
+      box-shadow: 0px 4px 7.5px 0.5px rgba(181, 186, 188, 0.16)
+      background: #d8ecf2
+      border-radius: 25px
+      max-width: 275px
+      padding: 30px 48px 40px 65px
+      display: flex
+      flex-direction: column
+      align-items: start
+      justify-content: center
+      position: relative
+      margin-right: 40px
+      &:before
+        @include before
+        left: 80px
+        top: 100%
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 0 40px 20px 0
+        border-color: transparent #d8ecf2 transparent transparent
+    &-percent
+      text-shadow: 0 0 81.8px rgba(181, 186, 188, 0.73)
+      font-family: "Lato-LightItalic", sans-serif
+      font-size: 71.5px
+      font-weight: 300
+      font-stretch: normal
+      font-style: italic
+      line-height: 1.03
+      letter-spacing: 0.72px
+      text-align: center
+      color: #f9634f
+      margin-bottom: -8px
+    &-text
+      text-shadow: 0 0 81.8px rgba(181, 186, 188, 0.73)
+      font-family: "Roboto", sans-serif
+      font-size: 12px
+      font-weight: 400
+      font-stretch: normal
+      font-style: italic
+      line-height: 1.25
+      color: #8ea6af
+    &-cloud
+      position: absolute
+      right: 0
+      top: 0
+      z-index: -1
+    &-link
+      margin-top: 44px
+      display: block
+      font-family: "Roboto", sans-serif
+      text-decoration: underline
+      font-size: 12px
+      color: $color2
+      text-align: right
+      margin-bottom: 65px
+  &__sixth
+    padding: 105px 0 130px
+    position: relative
+    background: #ddecf2
+    &:before
+      @include before
+      background:  url("../img/group_1.png") no-repeat center 70% / cover
+      height: 220px
+      width: 100%
+      z-index: 0
+    &-logo
+      margin: 0 auto 42px
+      position: relative
+      z-index: 1
+    .form
+      margin: 42px auto 0
+.information
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 63px 0
+  &__menu
+    padding: 0 90px 40px 87px
+  &__item
+    border-radius: 5px
+    background: $bg-color1
+    padding: 7px 30px 6px 20px
+    margin-bottom: 15px
+    border-image-slice: 1
+    border-left: 3px solid transparent
+    cursor: pointer
+    transition: all 0.3s ease
+    .text-18
+      font-family: "Roboto-Bold", sans-serif
+    &.active
+      padding: 7px 30px 6px 30px
+      box-shadow: 0px 4px 7.5px 0.5px rgba(181, 186, 188, 0.16)
+      border-image-source: linear-gradient(to top, $bg-color2, $bg-color2)
+  &__content-img
+    max-height: 380px
+    width: 100%
+

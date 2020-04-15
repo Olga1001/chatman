@@ -1,0 +1,327 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1199px)
+  .second-img
+    width: 52vw
+    margin-right: 1vw
+    padding-left: 2.2vw
+@media only screen and (max-width : 1024px)
+  .second .row
+    display: block
+  .second-img
+    width: 100%
+    max-height: 400px
+    margin: 0 auto 20px
+    padding: 0
+  .list
+    margin: 0 auto
+  .options__second-item
+    margin-right: 0
+  .options__item, .options__item:nth-child(3n+3)
+    margin-right: 40px
+    width: calc(50% - 20px)
+    &:nth-child(2n+2)
+      margin-right: 0
+  .options__fourth-img
+    width: 100%
+
+@media only screen and (max-width : 991px)
+  .third-item
+    width: calc(50% - 17px)
+    &:nth-child(2n+2)
+      margin-right: 0
+  .third .row
+    justify-content: center
+  .third .row
+    padding-top: 200px
+  .third-image
+    width: 100%
+    height: 45vw
+  .offer
+    flex-direction: column
+    align-items: baseline
+  .offer-img
+    position: initial
+    transform: none
+  .offer-img
+    height: 300px
+    width: 100%
+  .options__second-img
+    margin: 0 auto
+  .information__menu
+    padding: 0 40px
+  .questions__list
+    max-width: 200px
+  .calculate .btn
+    width: 100%
+    margin: 30px auto 0
+@media only screen and (max-width : 767px)
+  .offer, .second
+    padding: 40px 0
+  .title-main
+    font-size: 36px
+  .text-18
+    font-size: 14px
+  .title
+    font-size: 26px
+  .fourth .title
+    font-size: 22px
+  .second .title
+    margin-bottom: 20px
+  .list-item
+    margin-bottom: 30px
+  .third
+    padding-top: 100px
+  .third-img
+    max-height: 470px
+    width: 100%
+  .third .row
+    padding-top: 125px
+  .burger
+    display: block
+  .header
+    padding: 10px 0
+  .nav
+    position: absolute
+    right: 15px
+    top: 100%
+    z-index: 9
+    background: $bg-color1
+    padding: 20px 0
+    border-radius: 15px 0 15px 15px
+    min-width: 154px
+    display: none
+  .menu
+    flex-direction: column
+    align-items: flex-end
+    &-link
+      padding: 10px 20px
+  .list
+    max-width: 100%
+  .third-item
+    max-width: 100%
+    width: 100%
+    margin: 0 auto 20px!important
+  .tabs-item
+    padding: 10px
+    font-size: 13px
+    min-width: auto
+  .text-24
+    font-size: 18px
+  .text-15
+    font-size: 14px
+  .sixth
+    padding-bottom: 0
+  .footer__menu
+    display: block
+  .footer__link
+    margin-right: 0
+  .footer__bottom .footer__link
+    margin-bottom: 10px
+  .slider
+    padding: 5px 0 65px
+  p
+    font-size: 14px
+  .contacts-right
+    padding: 0
+  .options__fifth-top
+    flex-direction: column
+    align-items: baseline
+  .options__analysis
+    margin-top: 0
+  .options__analysis-link
+    margin-bottom: 10px
+  .information
+    padding: 40px 0
+    flex-direction: column-reverse
+  .information__menu
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+  .information__item
+    border: none
+    border-image-slice: 1
+    border-bottom: 3px solid transparent
+  .title-50
+    font-size: 36px
+  .options__sixth
+    padding: 60px 0 80px
+  .options__sixth:before
+    height: 165px
+  .options__second
+    .tabs
+      flex-wrap: wrap
+    .tabs-item
+      width: 50%
+      margin: 0
+  .options__second-row
+    display: block
+  .options__second-item
+    width: 100%
+    max-width: 100%
+    margin-bottom: 20px
+  .options__item
+    width: 100%!important
+    margin: 0!important
+  .options__col
+    padding-left: 10px
+  .options__second-img
+    width: 100%
+    max-width: 370px
+  .questions__list
+    max-width: 150px
+    text-align: left
+    padding: 47px 15px 0 0
+  .cards
+    display: block
+  .card
+    padding: 40px 20px!important
+    margin: 0 auto 20px
+  .questions__row
+    flex-direction: column
+  .questions__list
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    max-width: 100%
+    margin-bottom: 20px
+  .questions__list-item
+    padding: 0 10px
+  .comparison__top, .btns-row
+    padding: 0
+  .comparison__item
+    padding: 15px 10px
+  .comparison .text-18
+    padding-left: 10px
+  .hide
+    display: none
+  .social__item
+    width: 100%
+  .comparison__item
+    padding: 10px 5px
+    justify-content: flex-start
+  .comparison__item-col, .btns-col, .comparison__tab
+    width: 50%
+    justify-content: flex-start
+    align-items: flex-start
+    padding: 5px
+    &:first-child
+      width: 100%
+  .comparison
+    padding: 20px 0
+  .text-26
+    font-size: 21px
+  .calculate__form
+    padding: 15px 10px
+  .comparison__item-tab
+    display: block
+  .comparison__top
+    display: none
+  .comparison__list-second
+    .comparison__item-col
+      flex-direction: row
+  .btns-row
+    .btns-col
+      width: 50%
+  .show
+    display: inline-block
+  .calculate__price
+    margin-top: 20px
+    width: 100%
+  .calculate .btn
+    padding: 0 10px
+  .quotation
+    width: 15px
+  .comment
+    padding-left: 30px
+  .comment-text
+    font-size: 15px
+  .quotation-small
+    width: 8px
+    height: 15px
+  .comment-from
+    font-size: 12px
+  .social
+    padding: 40px 0
+@media only screen and (max-width : 575px)
+  .form .btn
+    width: 100px
+    font-size: 14px
+  .form input
+    width: calc(100% - 110px)
+  .title-main
+    font-size: 24px
+  .text-18, .title
+    br
+      display: none
+  .title
+    font-size: 20px
+  .list-icon
+    width: 50px
+    img
+      transform: scale(0.8)
+  .list-title, .third-title
+    font-size: 16px
+  .list-text, .third-text
+    font-size: 14px
+  .list .link-red
+    padding: 0
+  .contacts-row
+    display: block
+  .contacts-left
+    margin-bottom: 30px
+  .information__item
+    width: 50%
+    text-align: center
+    padding: 6px 15px
+    &.active
+      padding: 6px 15px
+  .title-50
+    font-size: 26px
+  .options__sixth-logo
+    margin: 0 auto 30px
+    width: 50px
+  .options__sixth:before
+    height: 140px
+  .options__analysis-item
+    margin: 0
+  .options__analysis-cloud
+    display: none
+  .options__analysis
+    padding-top: 30px
+  .options__fourth-img
+    margin: 0 auto
+  .card.bg-dark .btn
+    width: 100%
+    letter-spacing: normal
+    padding: 0 5px
+  .bookmark
+    width: auto
+    height: auto
+    padding: 7px 10px
+    background: #0097b0
+    border-radius: 0 5px 0 5px
+    &:before, &:after
+      content: none
+  .bookmark-text
+    transform: none
+    writing-mode: initial
+    position: initial
+  .text-26
+    br
+      display: none
+
+
+
+
+
+
+
+
+
+
+
