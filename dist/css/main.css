@@ -699,26 +699,25 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin-bottom: 50px; }
-    .list-item:first-child {
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: start; }
-      .list-item:first-child .list-icon {
-        height: 35px; }
+    .list-item:first-child .list-icon {
+      height: 35px; }
     .list-item:nth-child(2) .list-icon {
       height: 31px; }
     .list-item:nth-child(3) {
       margin-bottom: 38px; }
       .list-item:nth-child(3) .list-icon {
         height: 44px; }
+    .list-item.active .list-text {
+      display: block; }
   .list-icon {
     margin-right: 11px;
     width: 57px;
-    height: 44px; }
+    height: 44px;
+    margin-top: -10px; }
     .list-icon img {
       margin: 0 auto; }
   .list-col {
@@ -737,12 +736,14 @@ select {
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
-    color: #1a1f21; }
+    color: #1a1f21;
+    cursor: pointer; }
   .list-text {
     font-size: 15px;
     line-height: 1.6;
     color: #323536;
-    margin-top: 6px; }
+    margin-top: 6px;
+    display: none; }
   .list .link-red {
     padding-left: 80px; }
 
@@ -1273,7 +1274,7 @@ select {
     display: -ms-flexbox;
     display: flex; }
     .card__item .text-14 {
-      line-height: 1; }
+      line-height: 1.3; }
   .card__check {
     width: 17px;
     height: 13px;
@@ -1634,7 +1635,7 @@ select {
   .quotation-small {
     display: inline-block;
     width: 14px;
-    height: 20px; }
+    height: 25px; }
 
 .social {
   padding: 153px 0 110px; }

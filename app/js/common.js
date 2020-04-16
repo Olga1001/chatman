@@ -34,5 +34,8 @@ $(document).ready(function () {
         $(".questions__content-item").eq(index).addClass('active').siblings().removeClass('active');
     });
 
+    $(".list-title").click(function () {
+        $(this).parent().find(".list-text").slideDown(300).closest(".list-item").siblings().find(".list-text").slideUp(300)
+    });
 });
 

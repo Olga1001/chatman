@@ -38,10 +38,9 @@
   padding-top: 20px
   &-item
     display: flex
-    align-items: center
+    align-items: start
     margin-bottom: 50px
     &:first-child
-      align-items: start
       .list-icon
         height: 35px
     &:nth-child(2)
@@ -51,10 +50,14 @@
       margin-bottom: 38px
       .list-icon
         height: 44px
+    &.active
+      .list-text
+        display: block
   &-icon
     margin-right: 11px
     width: 57px
     height: 44px
+    margin-top: -10px
     img
       margin: 0 auto
   &-col
@@ -72,11 +75,13 @@
     font-weight: bold
     line-height: 1
     color: $color2
+    cursor: pointer
   &-text
     font-size: 15px
     line-height: 1.6
     color: $color4
     margin-top: 6px
+    display: none
   .link-red
     padding-left: 80px
 .third
