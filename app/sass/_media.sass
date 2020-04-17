@@ -191,26 +191,23 @@
     margin-bottom: 20px
   .questions__list-item
     padding: 0 10px
-  .comparison__top, .btns-row
+  .btns-row
     padding: 0
+  .comparison__top
+    padding: 15px
+    margin: 0 -15px
+    position: sticky
+    top: 0
   .comparison__item
-    padding: 15px 10px
+    padding: 15px
+    min-height: 100px
+    align-items: center
   .comparison .text-18
-    padding-left: 10px
+    padding-left: 0
   .hide
     display: none
   .social__item
     width: 100%
-  .comparison__item
-    padding: 10px 5px
-    justify-content: flex-start
-  .comparison__item-col, .btns-col, .comparison__tab
-    width: 50%
-    justify-content: flex-start
-    align-items: flex-start
-    padding: 5px
-    &:first-child
-      width: 100%
   .comparison
     padding: 20px 0
   .text-26
@@ -219,14 +216,23 @@
     padding: 15px 10px
   .comparison__item-tab
     display: block
-  .comparison__top
-    display: none
-  .comparison__list-second
-    .comparison__item-col
-      flex-direction: row
   .btns-row
     .btns-col
       width: 50%
+    .btn, .btn-white
+      min-width: 124px
+      font-family: "Roboto", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 34px
+      text-align: center
+      display: block
+      border: 1px solid #DD4544
+      box-sizing: border-box
+      border-radius: 10px
+      padding: 0 5px
+      text-transform: capitalize
   .show
     display: inline-block
   .calculate__price
@@ -247,6 +253,53 @@
     font-size: 12px
   .social
     padding: 40px 0
+  .comparison__tab
+    width: 23.5%
+  .comparison__item-col
+    width: 23.5%
+    .gift
+      align-items: flex-start
+    .gift-img
+      width: 12px
+      height: 11px
+      margin-right: -10px
+    p
+      font-size: 12px
+      line-height: 13px
+      color: #000000
+    &:first-child
+      width: 53%
+    &:nth-child(2), &:nth-child(3)
+      p
+        font-family: "Roboto-Bold", sans-serif
+        font-style: normal
+        font-weight: bold
+        text-align: center
+      p.gift__text-small
+        font-family: "Roboto", sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        text-align: center
+        color: #000000
+    .text-small
+      font-family: "Roboto", sans-serif
+      font-style: normal
+      font-weight: normal
+      display: block
+      font-size: 10px
+      line-height: 12px
+
+  .btn-startup, .btn-business
+    font-size: 10px
+    line-height: 24px
+    min-width: 70px
+    letter-spacing: 0.7px
+  .comparison__list
+    margin: 0 -15px 40px
+  .comparison__list-second
+    margin-bottom: 15px
 @media only screen and (max-width : 575px)
   .form .btn
     width: 100px
